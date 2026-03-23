@@ -1,0 +1,56 @@
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+  text-size-adjust: 100%; /* Prevent font scaling on mobile */
+  line-height: 1.5; /* Improve readability */
+}
+
+body {
+  min-height: 100vh; /* Ensure body fills the viewport */
+  text-rendering: optimizeSpeed; /* Improve text rendering */
+  font-family: system-ui, sans-serif; /* Use a modern default font stack */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; /* Ensure media elements are block-level */
+  max-width: 100%; /* Prevent overflow */
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Inherit font styles */
+}
+
+a {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit text color */
+}
+
+ul,
+ol {
+  list-style: none; /* Remove default list styles */
+}
+
+table {
+  border-collapse: collapse; /* Remove table spacing */
+  border-spacing: 0;
+}
+
+:root {
+  --primary-color: #000; /* Example custom property */
+  --secondary-color: #fff;
+}
