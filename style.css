@@ -1,0 +1,629 @@
+body {
+  font-family: "Sen", sans-serif !important;
+}
+
+#container {
+  display: grid;
+  grid-template-areas:
+  "nav"
+  "header"
+  "main"
+  "footer";
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+#container > nav {
+  grid-area: nav;
+  background-color: #000000;
+}
+
+.navbar-collapse {
+  display: flex;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 20px;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+}
+
+.dropdown-menu {
+  background-color: #000000; 
+}
+
+.dropdown-menu .dropdown-item {
+  color: rgb(255, 255, 255);
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #32363a; 
+  color: white;
+}
+
+#container > header > h1 {
+  font-size: 55px;
+  color: white;
+}
+
+body.start > #container > header {
+    grid-area: header;
+  
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    
+    height: 650px;
+
+    background-image: url(Images/img_woman.jpg); /* Källa: https://www.pexels.com/sv-se/foto/kvinna-mork-reflektion-haller-7991576/ */
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+  }
+  
+body.start > #container > main {
+  grid-area: main;
+
+  display: grid;
+  justify-content: center;
+
+  background-color: rgb(0, 0, 0);
+}
+
+body.start > #container > main > section {
+  width: 100%;
+  padding: 70px 170px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body.start > #container > main > section > #signatur {
+  font-family: "Rock Salt", cursive;
+  padding-top: 50px;
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body.start > #container > header > h1 {
+  font-size: 55px;
+  font-family: "Rock Salt", cursive;
+  color: white;
+}
+
+body.start > #container > main > section > h1 {
+  font-family: "Rock Salt", cursive;
+  font-size: 30px;
+  padding: 0px 0px 40px 0px;
+}
+
+
+/*-----*//*-----*//*-----*/
+body.filmer > #container > header {
+  grid-area: header;
+  
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    
+    height: 500px;
+
+    background-image: url(Images/img_centralcinemasign.jpg); /* Källa: https://www.pexels.com/sv-se/foto/375885/ */
+    background-size: cover;
+    background-position: center 2%;
+    background-repeat: no-repeat;
+}
+
+body.filmer > #container > main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: black;
+  color: white;
+}
+
+body.filmer > #container > main > section {
+  margin: 50px 100px 20px 100px;
+}
+
+body.filmer > #container > main > section > h1 {
+  font-size: 30px;
+  font-family: "Rock Salt", cursive;
+}
+
+body.filmer > #container > main > section > h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+body.filmer > #container > main > section > h3 {
+  margin-top: 20px;
+}
+
+body.filmer > #container > main > section > ul {
+  margin-top: 10px;
+}
+
+body.filmer > #container > main > section > ul > li {
+  margin-bottom: 10px;
+}
+
+body.filmer > #container > main > section > p {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/*-----*//*-----*//*-----*/
+body.starwars > #container > header {
+    grid-area: header;
+  
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    
+    height: 500px;
+
+    background-image: url(Images/img_starwars.jpg); /* Källa: https://www.pexels.com/sv-se/foto/oskarpa-kostym-fantasi-skarpedjup-3526022/ */
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+
+body.starwars > #container > main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: black;
+  color: white;
+}
+
+body.starwars > #container > main > #textstarwars {
+  margin: 50px 100px 20px 100px;
+}
+
+body.starwars > #container > main > section > h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "Rock Salt", cursive;
+}
+
+body.starwars > #container > main > section > h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+body.starwars > #container > main > section > h3 {
+  margin-top: 20px;
+}
+
+body.starwars > #container > main > #imgstarwars {
+  margin-top: 50px;
+  margin-right: 100px;
+}
+
+body.starwars > #container > main > section > img {
+  box-shadow: 0px 0px 30px white;
+}
+
+body.starwars > #container > main > section > ul {
+  margin-top: 10px;
+}
+
+body.starwars > #container > main > section > ul > li {
+  margin-bottom: 10px;
+}
+
+body.starwars > #container > main > section > p {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/*-----*//*-----*//*-----*/
+body.fightclub > #container > header {
+  grid-area: header;
+  
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+    
+  height: 500px;
+
+  background-image: url(Images/img_fightclubscreencaps.jpg); /* Källa: https://images5.fanpop.com/image/photos/26300000/Movie-Screencaps-tyler-durden-26312353-1024-576.jpg */
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+}
+
+body.fightclub > #container > main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: black;
+  color: white;
+}
+
+
+body.fightclub > #container > main > #textfightclub {
+  margin: 50px 100px 20px 100px;
+}
+
+
+body.fightclub > #container > main > section > h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "Rock Salt", cursive;
+}
+
+body.fightclub > #container > main > section > h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+body.fightclub > #container > main > section > h3 {
+  margin-top: 20px;
+}
+
+body.fightclub >#container > main > #imgfightclub {
+  margin-top: 50px;
+  margin-right: 100px;
+}
+
+body.fightclub > #container > main > section > img {
+  box-shadow: 0px 0px 30px white;
+}
+
+body.fightclub > #container > main > section > ul {
+  margin-top: 10px;
+}
+
+body.fightclub > #container > main > section > ul > li {
+  margin-bottom: 10px;
+}
+
+body.fightclub > #container > main > section > p {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/*-----*//*-----*//*-----*/
+body.inception > #container > header {
+  grid-area: header;
+  
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+    
+  height: 500px;
+
+  background-image: url(Images/img_inceptionspinner.jpg); /* Källa: https://www.flickr.com/photos/pagarneau/5057713273 */
+  background-size: cover;
+  background-position:center 75%;
+  background-repeat: no-repeat;
+}
+
+body.inception > #container > main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: black;
+  color: white;
+}
+
+
+body.inception > #container > main > #textinception {
+  margin: 50px 100px 20px 100px;
+}
+
+
+body.inception > #container > main > section > h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "Rock Salt", cursive;
+}
+
+body.inception > #container > main > section > h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+body.inception > #container > main > section > h3 {
+  margin-top: 20px;
+}
+
+body.inception > #container > main > #imginception {
+  margin-top: 50px;
+  margin-right: 80px;
+}
+
+body.inception > #container > main > section > img {
+  box-shadow: 0px 0px 30px white;
+}
+
+body.inception > #container > main > section > ul {
+  margin-top: 10px;
+}
+
+body.inception > #container > main > section > ul > li {
+  margin-bottom: 10px;
+}
+
+
+body.inception > #container > main > section > p {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/*-----*//*-----*//*-----*/
+body.om > #container > header {
+  grid-area: header;
+  
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+    
+  height: 500px;
+
+  background-image: url(Images/img_takeandcamera.jpg); /* Källa: : https://www.pexels.com/sv-se/foto/hander-kamera-vintage-lins-3945317/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.om > #container > main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: black;
+  color: white;
+}
+
+body.om > #container > main > section {
+  margin: 50px 100px 20px 100px;
+}
+
+body.om > #container > main > section > h1 {
+  padding: 0px 0px 40px 0px;
+  font-size: 30px;
+  font-family: "Rock Salt", cursive;
+}
+
+body.om > #container > main > section > p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/*-----*//*-----*//*-----*/
+body.kontakt > #container > header {
+  grid-area: header;
+  
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    
+    height: 500px;
+
+    background-image: url(Images/img_moviepopcornyellow.jpg); /* Källa:https://www.pexels.com/sv-se/foto/stolar-saten-inomhus-popcorn-7234229/ */
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+}
+
+body.kontakt > #container > main {
+  grid-area: main;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+body.kontakt > #container > main > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+body.kontakt > #container > main > section > #formular {
+  width: 70%;
+  height: 100%;
+  border: 1px solid white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+body.kontakt > #container > main > section > #formular > form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 5px;
+  width: 90%;
+  height: 100%;
+}
+
+body.kontakt > #container > main > section > #formular > form > #kommentar {
+  height: 90px;
+}
+
+body.kontakt > #container > main > section > h1 {
+  padding: 0px 0px 40px 0px;
+  font-size: 30px;
+  font-family: "Rock Salt", cursive;
+}
+
+/*-----*//*-----*//*-----*/
+#container > footer {
+  grid-area: footer;
+
+  color: white;
+  border-top: 1px solid red;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+/*-----*//*-----*//*-----*//*-----*//*-----*//*-----*//*-----*//*-----*//*-----*/
+@media (max-width: 990px) { /* Bootstrap's breakpoint for lg */
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+  .navbar-collapse {
+    justify-content: center;
+  }
+  .navbar-toggler {
+  border: 2px solid white !important;
+  border-radius: 4px;
+}
+}
+
+@media only screen and (min-width: 380px) and (max-width: 880px){
+body.start > #container > header > h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+body.start > #container > header {
+  height: 400px;
+  background-position: center 25%;
+}
+
+body.start > #container > main > section {
+  padding: 50px;
+  text-align: center;
+}
+
+body.filmer > #container > header {   
+  height: 250px;
+}
+
+body.filmer > #container > main > section {
+  margin: 40px;
+}
+
+body.starwars > #container > header {
+  height: 300px;
+}
+
+body.starwars > #container > main {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+body.starwars > #container > main > #textstarwars {
+  margin: 40px 40px 0px 40px;
+}
+
+body.starwars > #container > main > #imgstarwars {
+  margin: 0px 40px 40px 40px;
+  place-items: center;
+}
+
+body.fightclub > #container > header {
+  height: 300px;
+}
+
+body.fightclub > #container > main {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+body.fightclub > #container > main > #textfightclub {
+  margin: 40px 40px 0px 40px;
+}
+
+body.fightclub > #container > main > #imgfightclub {
+  margin: 0px 40px 40px 40px;
+  place-items: center;
+}
+
+body.inception > #container > header {
+  height: 300px;
+}
+
+body.inception > #container > main {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+body.inception > #container > main > #textinception {
+  margin: 40px 40px 0px 40px;
+}
+
+body.inception > #container > main > #imginception {
+  margin: 0px 40px 40px 40px;
+  place-items: center;
+}
+
+body.om > #container > header {
+  height: 300px;
+}
+
+body.om > #container > main {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+body.om > #container > main > #textom {
+  margin: 40px;
+}
+
+body.om > #container > main > #imgoscars {
+  margin: 0px 40px 40px 40px;
+  place-items: center;
+  
+}
+
+body.kontakt > #container > header {
+  height: 300px;
+}
+
+body.kontakt > #container > main > section {
+  margin: 40px;
+}
+
+body.kontakt > #container > main > section > #formular {
+  width: 350px;
+}
+}
