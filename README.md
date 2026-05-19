@@ -17,6 +17,17 @@ As an Information Architect student, I prioritized the user experience through s
 - **Readability & Contrast**: Improved color harmony and contrast to enhance the experience, particularly for users with visual impairments.
 - **Information Architecture**: Implemented a hierarchical dropdown menu to categorize movies (e.g., Star Wars, Inception), reducing cognitive load for the user.
 
+## Screenshots
+
+**Homepage**
+![Homepage](images/Skärmbild%202026-05-19%20074820.png)
+
+**Movie detail page — content structure**
+![Movie detail](images/Skärmbild%202026-05-19%20074947.png)
+
+**Navigation — hierarchical dropdown menu**
+![Navigation dropdown](images/Skärmbild%202026-05-19%20075230.png)
+
 ### Project Structure
 - `index1.html` – Home page with the club's introduction.
 - `index2.html` to `index5.html` – Movie information pages featuring ratings and plot summaries.
